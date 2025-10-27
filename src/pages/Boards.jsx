@@ -13,7 +13,7 @@ function Boards() {
 
             <Cards />
             <div className='mt-7'>
-                <span>YOUR WORKSPACES</span>
+                <span className='text-md'>YOUR WORKSPACES</span>
                 <div className='flex items-center'>
                     <Cards />
 

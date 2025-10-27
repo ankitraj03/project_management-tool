@@ -3,12 +3,14 @@ import PreNav from './PreNav'
 import LandingSection from './LandinSection'
 import TrelloHeroFooter from './Prefoot'
 
+
 function Prelogin() {
   return (
     <div>
-        <PreNav/>
+        {/* <PreNav/> */}
         <LandingSection/>
         <TrelloHeroFooter/>
+        {/* <Prefooter/> */}
     </div>
   )
 }

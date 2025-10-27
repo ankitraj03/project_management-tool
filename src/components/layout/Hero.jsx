@@ -14,6 +14,7 @@ import PersonalData from "../../pages/templates/Personal";
 import ProductManagementData from "../../pages/templates/Product_management";
 import ProductivityData from "../../pages/templates/Productivity";
 import SalesData from "../../pages/templates/sales";
+import Home from "../../pages/Home";
 
 function Hero() {
   const [activeCategory, setActiveCategory] = useState("Business");
@@ -46,7 +47,6 @@ function Hero() {
 
   return (
     <div className="flex flex-col md:flex-row h-screen bg-[#1e1f24] text-[#9FADBC]">
-      {/* Mobile Header */}
       <div className="md:hidden flex items-center justify-between px-4 py-3 border-b border-gray-800">
         <h1 className="text-lg font-semibold">Dashboard</h1>
         <button
@@ -57,7 +57,7 @@ function Hero() {
         </button>
       </div>
 
-      {/* Sidebar */}
+
       <div
         className={`${
           sidebarOpen ? "block" : "hidden"
@@ -117,7 +117,7 @@ function Hero() {
       </div>
 
       <Boards/>
-      {/* <div className="flex-1 p-6 overflow-y-auto scrollbar-hide">
+      <div className="flex-1 p-6 overflow-y-auto scrollbar-hide">
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
           {data.slice(0, 12).map((item, index) => (
             <Templates
@@ -129,7 +129,9 @@ function Hero() {
             />
           ))}
         </div>
-      </div> */}
+      </div>
+      <Home/>
+
     </div>
   );
 }
